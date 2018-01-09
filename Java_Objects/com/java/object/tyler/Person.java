@@ -4,7 +4,7 @@ public class Person {
 
 	public static void main(String[] args) {
 		// instantiate new objects 
-		personsFullName name1 = new personsFullName();
+		personsFullName name1 = new personsFullName(null, null, 0);
 		
 		// set the fullName
 		name1.setFirstName("Tyler");

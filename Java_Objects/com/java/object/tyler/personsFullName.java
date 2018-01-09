@@ -6,6 +6,22 @@ public class personsFullName {
 	String lastName;
 	int age;
 	
+	// overloaded constructor #1
+	public personsFullName(String first) {
+		firstName = first;
+	}
+	// overloaded constructor #2
+	public personsFullName(String first, String last) {
+		firstName = first;
+		lastName = last;
+	}
+	// overloaded constructor #3
+	public personsFullName(String first, String last, int age) {
+		firstName = first;
+		lastName = last;
+		this.age = age;
+	}
+	
 	// getter method
 	public String getFirstName() {
 		return firstName;
