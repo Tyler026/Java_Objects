@@ -20,6 +20,12 @@ public class personsFullName {
 		firstName = first;
 		lastName = last;
 		this.age = age;
+		
+		if (age <= -1) {
+			System.out.println("Attempted to set age to an invalid value. Set age to 0 instead");
+		} else {
+			System.out.println(age);
+		}
 	}
 	
 	// getter method
@@ -27,24 +33,27 @@ public class personsFullName {
 		return firstName;
 	}
 	// setter method
-	public String setFirstName(String newFirstName) {
-		return firstName = newFirstName;
+	public void setFirstName(String newFirstName) {
+		firstName = newFirstName;
 	}
 	// getter method
 	public String getLastName() {
 		return lastName;
 	}
 	// setter method
-	public String setLastName(String newLastName) {
-		return lastName = newLastName;
+	public void setLastName(String newLastName) {
+		lastName = newLastName;
 	}
 	// getter method
 	public int getAge() {
 		return age;
 	}
 	// setter method
-	public int setAge(int newAge) {
-		return age = newAge;
+	public void setAge(int newAge) {
+		if (age <= -1) {
+			System.out.println("Attempted to set age to an invalid value. Set age to 0 instead");
+		} else {
+			System.out.println(age);
 	}
 	
-}	
+}}	
